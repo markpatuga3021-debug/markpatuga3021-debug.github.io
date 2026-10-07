@@ -290,7 +290,7 @@ body {
 ========================= */
 
 .services {
-    padding: 100px 9%;
+    padding: 100px 9% 170px;
     background: #080f1c;
 }
 
@@ -406,9 +406,9 @@ body {
 
 @media (max-width: 600px) {
 
-    .services {
-        padding: 70px 6%;
-    }
+   .services {
+    padding: 70px 6% 140px;
+}
 
     .service-grid {
         grid-template-columns: 1fr;
