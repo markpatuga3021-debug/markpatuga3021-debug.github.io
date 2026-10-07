@@ -993,3 +993,8 @@ body {
     }
 
 }
+
+/* Dental Automation Project Viewer */
+#dentalAutomationViewer:target {
+    display: flex;
+}
