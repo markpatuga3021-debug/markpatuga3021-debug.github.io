@@ -222,7 +222,7 @@
 <!-- CARD 04: PIPELINE & CONTACT SEGMENTATION -->
 
 <div class="service-card landing-card"
-     onclick="openPipeline()">
+     onclick="document.getElementById('pipelineViewer').style.display='flex';">
 
     <span class="service-number">04</span>
 
@@ -239,7 +239,8 @@
     
    <!-- CARD 05: DENTAL LEAD TO APPOINTMENT AUTOMATION -->
 
-<div class="service-card landing-card">
+<div class="service-card landing-card"
+     onclick="document.getElementById('dentalAutomationViewer').style.display='flex';">
     <span class="service-number">05</span>
 
     <h3>Dental Lead to Appointment Automation</h3>
@@ -249,11 +250,7 @@
         qualify leads, automate follow-up, and guide prospects toward appointment booking.
     </p>
 
-    <a href="#dentalAutomationViewer"
-   class="card-action"
-   onclick="document.getElementById('dentalAutomationViewer').style.display='flex'; return false;">
-    EXPLORE PROJECT →
-</a>
+    <span class="card-action">EXPLORE PROJECT →</span>
 </div>
 
 
