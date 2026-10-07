@@ -327,6 +327,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 22px;
+    margin-bottom: 80px;
 }
 
 .service-card {
