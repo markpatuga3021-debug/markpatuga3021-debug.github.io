@@ -523,6 +523,36 @@ function nextDentalAutomationSlide() {
     document.getElementById("dentalAutomationSlideNumber").textContent =
         String(dentalAutomationCurrentSlide + 1).padStart(2, "0");
 }
+ function previousDentalAutomationSlide() {
+    dentalAutomationCurrentSlide--;
+
+    if (dentalAutomationCurrentSlide < 0) {
+        dentalAutomationCurrentSlide = dentalAutomationSlides.length - 1;
+    }
+
+    document.getElementById("dentalAutomationSlideImage").src =
+        "Dental Lead to Appointment Automation/" +
+        dentalAutomationSlides[dentalAutomationCurrentSlide];
+
+    document.getElementById("dentalAutomationSlideNumber").textContent =
+        String(dentalAutomationCurrentSlide + 1).padStart(2, "0");
+}
+
+document.addEventListener("keydown", function(event) {
+    const viewer = document.getElementById("dentalAutomationViewer");
+
+    if (!viewer || viewer.style.display === "none") {
+        return;
+    }
+
+    if (event.key === "ArrowRight") {
+        nextDentalAutomationSlide();
+    }
+
+    if (event.key === "ArrowLeft") {
+        previousDentalAutomationSlide();
+    }
+});   
 let pipelineCurrentSlide = 0;
 
 function openPipeline() {
