@@ -999,3 +999,11 @@ body {
 #dentalAutomationViewer:target {
     display: flex;
 }
+
+/* PROJECT IMAGES - KEEP ORIGINAL COLORS */
+.landing-image-wrap img,
+#dentalAutomationViewer img {
+    filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+}
